@@ -57,6 +57,7 @@ nav{
     height: 8rem;
     border-bottom: 1px solid rgba(255,255,255,.1);
 }
+
 .logo{
     width: 5rem;
     height: 5rem;
@@ -99,6 +100,18 @@ nav{
 .nav-list a:hover{
     color: #eb3007;
 }
+
+nav.onscroll{
+    position: fixed;
+   color: #191919;
+   background-color: #eee; 
+}
+
+nav.onscrooll .logo i,
+nav.onscrooll .nav-list a{
+    color: #191919;
+}
+
 
 .btn{
     padding: 1.3rem;
@@ -245,7 +258,13 @@ li.move-right{
     margin-bottom: 5rem;
 }
 
-.text .btn{
+.text .btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text .btns .btn{
     font-size: 1.6rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -253,13 +272,13 @@ li.move-right{
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 850px){
     .text h1{
         font-size: 4rem;
     }
 
-    .text .btn{
-        font-size: 1.2rem;
+    .text .btns .btn{
+        font-size: 1.15rem;
     }
 }
 
@@ -295,3 +314,13 @@ footer{
     color: #eb3007;
 }
 
+@media screen and (max-width: 850px){
+    .contain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contain a,.contain p{
+        font-size: 1.5rem;
+    }
+} 
