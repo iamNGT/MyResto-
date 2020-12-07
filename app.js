@@ -10,8 +10,8 @@ selectElement('.menu-icons').addEventListener('click',function () {
 
 window.addEventListener('scroll', function(){
     if(this.scrollY > 20){
-        selectElement('.container').classList.toggle('onscroll');
+        selectElement('header').classList.toggle('onscroll');
     } else{
-        selectElement('.container').classList.remove('onscroll');
+        selectElement('header').classList.remove('onscroll');
     }
 });

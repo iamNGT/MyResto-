@@ -112,17 +112,21 @@ nav{
     color: #eb3007;
 }
 
-/* .container.onscroll{
+header.onscroll{
     position: fixed;
-   color: #191919;
+   /* color: #191919; */
    background-color: #eee;
    z-index: 0; 
 }
 
-.container.onscrooll nav .logo i,
-.container.onscrooll nav .nav-list li a{
+header.onscrooll nav .logo i,
+header.onscrooll  a{
     color: #191919;
-} */
+}
+
+header.onscrooll .small{
+    color: #191919;
+}
 
 
 .btn{
